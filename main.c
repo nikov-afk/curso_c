@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /*
- * Ler varios valores
- *  aula 10
+ * Ler sexo, idade, peso e altura
+ *  aula 11
  */
 
 int main(void) {
-    int numero_1, numero_2, numero_3;
+    char sexo;
+    int idade;
+    float peso, altura;
 
-    printf("Digite tres valores inteiros: ");
-    scanf("%d %d %d", &numero_1, &numero_2, &numero_3);
-    printf("O numero eh %d", numero_1);
-    printf("O numero eh %d", numero_2);
-    printf("O numero eh %d", numero_3);
+    printf("Digite sexo(f,F,m ou M) , idade, peso e altura:\n");
+    scanf("%c %d %f %f", &sexo,&idade,&peso,&altura);
+    printf("sexo: %c, idade: %d, peso: %f, altura: %f",sexo,idade,peso,altura);
+
     return 0;
 }
