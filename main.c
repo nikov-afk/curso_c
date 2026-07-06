@@ -1,19 +1,13 @@
 #include <stdio.h>
 
 /*
- * Ler dois caracteres
- *  aula 14
+ * Operador sizeof
+ *  aula 16
  */
 
 int main(void) {
-    char a, b;
-
-    printf("Digite uma letra: ");
-    scanf("%c", &a);// espaço entre os %c -> comando para o computador desconsiderar o ENTER, TAB e o ESPAÇO
-    //buffer => f\nf
-
-    printf("Digite outra letra: ");
-    scanf(" %c", &b);
-    printf("caracter um: %c caracter dois: %c", a, b);
+    float x = 1.0;
+    printf("tamanho de um float na memoria: %d bytes\n", sizeof x);
+    printf("tamanho em memoria de um int: %d\n", sizeof(int));
     return 0;
 }
