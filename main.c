@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /*
-        Aula 19
-    operador long para o tipo int
-    %li / %ld
+        Aula 20
+    tamanho de um float na memória
+    %f
 */
 
 int main(void) {
-    long long int y = 2147483647;
-    printf("tamanho de um int na memoria: %d bytes\n", sizeof y);
-    y++;
-    printf("tamanho em memoria de um  int: %lli\n", y);
+    float x = 3.1415;
+    printf("tamanho de um float na memoria: %d bytes\n", sizeof(float));
+
+    printf("tamanho em memoria de um  int: %f\n", x);
     return 0;
 }
