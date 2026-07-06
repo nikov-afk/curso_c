@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /*
- * Ler caracteres funçao getchar()
- *  aula 7
+ * Ler caracteres funçao getc()
+ *  aula 8
  */
 
 int main(void) {
@@ -36,7 +36,7 @@ int main(void) {
 
     printf("Digite seu sexo: (f, F. m ou M) ");
     //scanf("%c", &sexo);
-    sexo = getchar();
+    sexo = getc(stdin);
     printf("Valor da variavel sexo: %c\n", sexo);
 
 
