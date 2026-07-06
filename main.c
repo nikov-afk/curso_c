@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /*
-        Aula 20
-    tamanho de um float na memória
-    %f
+        Aula 21
+    tipo double
+    %lf
 */
 
 int main(void) {
-    float x = 3.1415;
-    printf("tamanho de um float na memoria: %d bytes\n", sizeof(float));
+    double x = 3.1415;
+    printf("tamanho de um double na memoria: %d bytes\n", sizeof(double));
 
-    printf("tamanho em memoria de um  int: %f\n", x);
+    printf("tamanho em memoria de um  double: %lf\n", x);
     return 0;
 }
