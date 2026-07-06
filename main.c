@@ -1,18 +1,15 @@
 #include <stdio.h>
 
 /*
-        Aula 24
-    operadores matemáticos para:
-    Soma              +
-    Subtração         -
-    Multiplicação     *
-    Divisão           /
+        Aula 25
+        conversão de tipos
 */
 
 int main(void) {
-    printf("\n\nSoma: %d\n\n",10 + 20);
-    printf("\n\nSubtracao %d",10 - 3);
-    printf("\n\nMultiplicacao %d",10 * 2);
-    printf("\n\nDivisao %f",10.0 / 2);
+    int a = 10, b = 20;
+    printf("\nSoma: %d",a + b);
+    printf("\nSubtracao %d",a - b);
+    printf("\nMultiplicacao %d",a * b);
+    printf("\nDivisao %f",(float)a / b);
     return 0;
 }
