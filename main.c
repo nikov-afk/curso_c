@@ -3,24 +3,20 @@
 #include <locale.h>
 
 /*
-        Aula 30
-        tabela ascii e acentuação
-        1 byte (8 bits) -> -128 até 127
-        unsigned 1 byte -> 0 até 255
-
-        9 é o caractere de tabulação \t.
-        10 é o caractere de nova linha \n (enter).
-        65 é a letra A maiúscula.
-        66 é a letra B maiúscula.
-        90 é a letra Z maiúscula.
-
-        1ª = setlocale(LC_ALL, NULL); // padrão da linguagem C
-        2ª = setlocale(LC_ALL, "");   // padrão do sistema operacional
-        3ª = setlocale(LC_ALL, "Portuguese"); // português brasileiro
+    Aula 99
+    Como criar um vetor
 */
 
 int main(void) {
-    setlocale(LC_ALL,"Portuguese");
-    printf("Coraçao\n");
+    int num[10];
+    int num2[] = {1,2,3,4,5};
+    int num3[5] = {1,2,3,4,5};
+    int num4[5] = {0};
+
+    char letras[100];
+    char vogais[5] = {'a','e','i','o','u'};
+
+    float notas[3] = {7.5, 8.3, 9.4};
+
     return 0;
 }
