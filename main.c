@@ -3,8 +3,8 @@
 #include <locale.h>
 
 /*
-    Aula 99
-    Como criar um vetor
+    Aula 100
+    Como imprimir o conteúdo de um vetor
 */
 
 int main(void) {
@@ -17,6 +17,8 @@ int main(void) {
     char vogais[5] = {'a','e','i','o','u'};
 
     float notas[3] = {7.5, 8.3, 9.4};
+
+    printf("%d ",num2[1]);
 
     return 0;
 }
