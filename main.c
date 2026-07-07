@@ -1,18 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
 
 /*
-    Aula 29
-    operador unsigned
-    trocar o %d por %u
-    limite para o tipo int: 2.147.483.647
+        Aula 30
+        tabela ascii e acentuação
+        1 byte (8 bits) -> -128 até 127
+        unsigned 1 byte -> 0 até 255
+
+        9 é o caractere de tabulação \t.
+        10 é o caractere de nova linha \n (enter).
+        65 é a letra A maiúscula.
+        66 é a letra B maiúscula.
+        90 é a letra Z maiúscula.
+
+        1ª = setlocale(LC_ALL, NULL); // padrão da linguagem C
+        2ª = setlocale(LC_ALL, "");   // padrão do sistema operacional
+        3ª = setlocale(LC_ALL, "Portuguese"); // português brasileiro
 */
 
 int main(void) {
-    unsigned int x = 4294967295;  // 0 ... 4.294.967.295
-    int y = 2147483647;
-
-    printf("x = %u\n", x);
-    printf("y = %d\n", y);
-
+    setlocale(LC_ALL,"Portuguese");
+    printf("Coraçao\n");
     return 0;
 }
