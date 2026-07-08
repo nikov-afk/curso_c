@@ -4,7 +4,7 @@
 #include <time.h>
 
 /*
-    Aula 103: Como gerar números aleatórios para preencher um vetor?
+    Aula 104: Como gerar números aleatórios dentro de um intervalo?
 */
 
 int main(void) {
@@ -13,7 +13,7 @@ int main(void) {
     srand(time(NULL));
     for(i = 0; i < 10; i++) {
         //num2[i] = rand();// gera uma sequancia pre moldada melhor pra testes
-        num2[i] = rand();
+        num2[i] = 1 + rand() % 100;
     }
     printf("\n\n");
     for(i = 0; i < 10; i++)
