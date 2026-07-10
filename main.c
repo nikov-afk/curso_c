@@ -5,17 +5,15 @@
 #include <string.h>
 
 /*
-    Aula 134: Descobrindo o tamanho de uma String com a função strlen()
+    Aula 135: Como concatenar duas Strings com a função strcat()?
 */
 
 int main() {
 
-    char palavras[13] = {"apenas teste"};
-    printf("%s\n", palavras);
-
-    printf("tamanho de palavras: %d\n", strlen(palavras));
-    printf("\n");
-
+    char palavras[50] = {"apenas"};
+    char palavras2[20] = {" palavras teste"};
+    strcat(palavras,palavras2);
+    printf("%s\n",palavras);
 
     return 0;
 }
