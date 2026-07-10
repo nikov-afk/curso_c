@@ -4,20 +4,27 @@
 #include <time.h>
 
 /*
-    Aula 131: Lendo uma String com a função fgets()
+    Aula 132: Como identificar o fim de uma String?
 */
 
 int main() {
-
-    char palavras[10];
+    int i;
+    char palavras[12] = {"apenas teste"};
     printf("%s\n", palavras);
 
-    printf("Digite seu nome: ");
+    //printf("Digite seu nome: ");
     //scanf("%10[^\n]",palavras);
     //gets(palavras);
-    fgets(palavras, 10, stdin);
+    //fgets(palavras, 10, stdin);
+    i = 0;
+    while (palavras[i] != '\0') {
+        printf("%c", palavras[i++]);
+    }
+    // for(i=0;i<12;i++) {
+    //     printf("%d %d\n",i, palavras[i]);
+    // }
+    printf("\n");
 
-    printf("%s\n", palavras);
 
     return 0;
 }
