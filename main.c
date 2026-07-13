@@ -5,15 +5,20 @@
 #include <string.h>
 
 /*
-    Aula 140: Converter String para maiúsculo ou minúsculo com strupr e strlwr
+    Aula 141: Como dividir uma String em tokens com a função strtok()?
 */
 
 int main() {
 
     char palavra[50] = {"Bom dia simpatia!"};
+    char *ponteiro;
 
-    strlwr(palavra);
-    strupr(palavra);
-    printf("%s\n", palavra);
+    ponteiro = strtok(palavra, " ");
+
+    while (ponteiro != NULL) {
+        printf("token: %s\n", ponteiro);
+        ponteiro = strtok(NULL, " ");
+    }
+
     return 0;
 }
