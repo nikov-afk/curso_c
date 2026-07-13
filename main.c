@@ -5,20 +5,21 @@
 #include <string.h>
 
 /*
-    Aula 138: Procurando caracteres em uma String com as funções strchr e strrchr
-    strchr  -> retorna a primeira ocorrência
-    strrchr -> retorna a última ocorrência
+    Aula 139: Como encontrar uma substring com a função strstr()
 */
 
 int main() {
 
-    char palavra[50] = {"apenas"};
-    char *letra;
+    char palavra[50] = {"Bom dia simpatia!"};
+    char str[] = {"dia"};
+    char *ponteiro;
 
-    letra = strchr(palavra,'a');
+    ponteiro = strstr(palavra, str);
 
-    printf("\n Resultado: %c\n",*letra);
-    printf("\n Resultado comfirmacao: %c\n",*(letra + 1));
+    if (ponteiro != NULL) {
+        printf("%c\n", *ponteiro);
+    }
 
-    return 0;
+
+        return 0;
 }
