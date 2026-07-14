@@ -5,25 +5,20 @@
 #include <string.h>
 
 /*
-    Aula 142: Matriz de Strings na linguagem de programação C
+    Aula 146: Criando uma função que retorna o tamanho de uma string em C
 */
 
+int minha_strlem(char str[]) {
+    int tam = 0;
+    while (str[tam] != '\0') {
+        tam++;
+    }
+    return tam;
+}
+
 int main() {
-
-    char nomes[5][50];
-    int l;
-
-    for (l = 0; l < 5; l++) {
-        printf("Digite o nome da posiçao %d. ",l);
-        fgets(nomes[l], 50, stdin);
-        //scanf("%50[^\n]",nomes[l]);
-        //scanf("%c");
-    }
-
-    for (l = 0; l < 5; l++) {
-        printf("%s", nomes[l]);
-    }
-
-
+    char vet[20] = {"Ola"};
+    printf("%d\n", strlen(vet));
+    printf("%d\n", minha_strlem(vet));
     return 0;
 }
